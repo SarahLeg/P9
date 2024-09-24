@@ -10,7 +10,7 @@ const Select = ({selection, onChange, name, titleEmpty, label, type = "normal",}
   const [value, setValue] = useState();
   const [collapsed, setCollapsed] = useState(true);
   const changeValue = (newValue) => {
-    onChange();
+    onChange(newValue);
     setValue(newValue);
     setCollapsed(newValue);
   };
